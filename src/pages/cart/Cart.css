@@ -1,0 +1,173 @@
+.container {
+  padding: 20px 10px;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.backToHome {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+  border-bottom: 2px solid #aaa;
+}
+.left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.arrow {
+  color: rgb(92, 92, 92);
+  font-size: 24px;
+}
+.left span {
+  font-weight: 300;
+  margin-left: 15px;
+  color: #646464;
+}
+.left:hover span {
+  text-decoration: underline;
+}
+.right {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.right span {
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: #d0011b;
+  border: 2px solid white;
+  color: white;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  right: 0;
+  top: 0;
+  transform: translate(7px, -5px);
+}
+
+.bottom {
+  padding: 20px 0;
+}
+
+/* cartTop */
+.cartTop {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px 0;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.cartTop-product {
+  width: 44%;
+  padding-left: 30px;
+}
+
+.cartTop-price {
+  width: 17%;
+  text-align: center;
+}
+.cartTop-count {
+  width: 17%;
+  text-align: center;
+}
+
+.cartTop-total {
+  width: 13%;
+  text-align: center;
+}
+
+.cartTop-delete {
+  width: 8%;
+  text-align: center;
+}
+/* cartTop-end */
+
+/* cartItem */
+.cartItem {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 15px 0;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.itemDetail {
+  display: flex;
+  width: 44%;
+  padding-left: 30px;
+  align-items: center;
+}
+
+.itemDetail img {
+  width: 150px;
+}
+
+.itemDetail h3 {
+  padding-left: 50px;
+}
+
+.cartItem .price {
+  width: 17%;
+  text-align: center;
+}
+
+.cartItem .amount {
+  display: flex;
+  width: 17%;
+  justify-content: center;
+}
+
+.cartItem button {
+  font-size: 16px;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #dadada;
+  width: 30px;
+  height: 30px;
+}
+
+.cartItem .amount input {
+  width: 40px;
+  height: 26px;
+  text-align: center;
+  border: 1px solid #dadada;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.total {
+  width: 13%;
+  color: #ee4d2d;
+  text-align: center;
+}
+
+.delete {
+  width: 8%;
+  text-align: center;
+  cursor: pointer;
+}
+.delete:hover {
+  font-weight: 600;
+}
+
+/*總計 */
+.totalPrice {
+  text-align: right;
+  padding-right: 50px;
+  font-size: 20px;
+}
+.totalPrice span {
+  font-weight: 500;
+}

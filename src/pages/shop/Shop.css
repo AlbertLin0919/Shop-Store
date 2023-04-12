@@ -1,0 +1,143 @@
+.shopTitle {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+.products-container {
+  max-width: 1220px;
+  margin: 0 auto;
+  width: 100%;
+}
+.products {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  place-items: center;
+}
+
+.product {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  width: 350px;
+  height: 350px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.product .description {
+  text-align: center;
+}
+
+.product:hover {
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+.addToCartBtn {
+  background-color: #d0011b;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  width: 150px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.addToCartBtn:hover {
+  background-color: #f30f2d;
+  color: white;
+  cursor: pointer;
+}
+.addToCartBtn:active {
+  transform: scale(0.9);
+}
+.add-to-cart {
+  display: absolute;
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.shoppingCart {
+  position: absolute;
+  z-index: 2;
+  top: 58%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.appleLogo {
+  position: absolute;
+  z-index: 1;
+  top: -20%;
+  right: 40%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.addToCartBtn.clicked .add-to-cart {
+  animation: text 1.5s ease-in-out;
+}
+
+.addToCartBtn.clicked .shoppingCart {
+  animation: cart 1.5s ease-in-out forwards;
+}
+.addToCartBtn.clicked .appleLogo {
+  animation: apple 1.5s ease-in-out forwards;
+}
+
+@keyframes cart {
+  0% {
+    opacity: 0.5;
+    left: -10%;
+  }
+  40%,
+  60% {
+    opacity: 1;
+    left: 51%;
+  }
+  100% {
+    opacity: 1;
+    left: 110%;
+  }
+}
+
+@keyframes apple {
+  0%,
+  40% {
+    opacity: 0.2;
+    top: -20%;
+  }
+
+  60% {
+    opacity: 1;
+    top: 40%;
+    left: 52%;
+  }
+  100% {
+    opacity: 1;
+    top: 40%;
+    left: 112%;
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 1;
+  }
+  20%,
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: #d0011b;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links {
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.links a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.links span {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  color: #d0011b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(10px, -10px);
+  border: 2px solid #d0011b;
+  pointer-events: none;
+  line-height: 1;
+}
