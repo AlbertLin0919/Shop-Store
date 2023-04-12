@@ -9,7 +9,7 @@ import Error from "./pages/Error/Error";
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/Shop-Store">
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
